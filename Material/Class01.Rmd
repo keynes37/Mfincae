@@ -1,0 +1,131 @@
+---
+title: "Modulo Microeconomía"
+subtitle: "Pruebas Saber Pro"
+author: "Carlos A Yanes"
+date: "2022/09/10 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "css/sfah.css", "css/fonts.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      beforeInit: "https://platform.twitter.com/widgets.js"
+    seal: false 
+    includes:
+      in_header: header.html
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(knitr)
+library(pacman)
+p_load(leaflet, ggplot2, ggthemes, viridis, dplyr, magrittr, knitr)
+# Define pink color
+red_pink <- "#e64173"
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+# options(knitr.table.format = "html")
+library(tidyverse)
+library(babynames)
+library(fontawesome) # from github: https://github.com/rstudio/fontawesome
+library(DiagrammeR)
+```
+
+layout: true
+  
+<div class="my-footer"><span>Uninorte | Depto Economía | Carlos Yanes</span></div>
+
+<!-- this adds the link footer to all slides, depends on my-footer class in css-->
+
+---
+name: xaringan-title
+class: left, middle, inverse
+background-image: url(img/user1.jpg)
+background-size: cover
+
+# Pruebas Saber Pro
+
+<img src="img/logoblancodepar.png" width="280" />
+
+### .fancy[Modulo Microeconomía]
+
+.large[Carlos Yanes | Departamento de Economía | `r Sys.Date()`]
+
+---
+class: middle, inverse
+
+.left-column[
+
+# `r emo::ji("confused")`
+
+]
+
+.right-column[
+# Si sabe por qué está acá?
+]
+
+---
+name: setup
+class: middle, inverse
+
+# Saben lo que <br> .fat[.fancy[Enfrentan?]]
+
+---
+name: ninja
+class: middle, inverse
+
+# Yo asumo que:
+
+--
+
+### <i class="fab fa-youtube" style="float:left"/></i>&nbsp; Ya es lo suficientemente maduro(a)
+
+--
+
+### <img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/rmarkdown.png" width="5%" style="float:left"/>&nbsp; Le gustan los retos
+
+--
+
+### <i class="fab fa-html5 fa-lg fa-fw" style="float:left"></i>&nbsp; .saltinline[.fancy[Recuerda algo de Microeconomía]] 
+
+---
+class: middle, center
+background-image: url(https://media.giphy.com/media/sZRjUjcBFit6U/giphy.gif)
+background-size: cover
+
+---
+name: another
+class: middle, inverse
+
+# Llegó la hora <br> .fat[.fancy[De la verdad!!]]
+
+---
+# Mecanismo icfes
+
+--
+
+`r fa("sketch", fill="blue")` .fancy[.acid[Comunicación Escrita]] Este módulo evalúa la competencia para *comunicar ideas por escrito* referidas a un tema dado. Específicamente, el estudiante debe **producir** un texto argumentativo en el que justifique su respuesta al problema planteado en el enunciado de la pregunta.
+
+--
+
+`r fa("sketch", fill="blue")` .fancy[.acid[Lectura crítica]] Este módulo evalúa tres competencias. Las dos primeras se refieren a la **comprensión del contenido de un texto**, ya sea a nivel local o global, y la tercera, a la aproximación propiamente **crítica** frente al texto.
+
+--
+
+`r fa("sketch", fill="blue")` .fancy[.acid[Razonamiento cuantitativo]] Este módulo evalúa el conjunto de **elementos de las matemáticas** (sean estos conocimientos o competencias) que permiten a un ciudadano tomar parte activa e informada en el contexto social, cultural, político, administrativo, económico, educativo y laboral. 
+
+--
+
+`r fa("sketch", fill="blue")` .fancy[.acid[Competencias ciudadanas]] En este módulo se evalúan aquellas **habilidades cognitivas, emocionales y comunicativas** que, integradas entre sí y relacionadas con conocimientos y actitudes, hacen posible que el ciudadano actúe de manera *constructiva* en la sociedad.
+
+--
+
+`r fa("sketch", fill="blue")` .fancy[.acid[Inglés]]: Este módulo evalúa la competencia para **comunicarse efectivamente** en inglés en un nivel básico.
+
+---
+class: middle, center
+background-image: url(https://media.giphy.com/media/DTPr0CgFihcSLdt6md/giphy.gif)
+background-size: cover
+#.fat[.fancy[Empecemos!!]]
