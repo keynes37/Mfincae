@@ -35,7 +35,7 @@ library(DiagrammeR)
 
 layout: true
   
-<div class="my-footer"><span>Uninorte | Depto Economía | Carlos Yanes</span></div>
+<div class="my-footer"><span>Uninorte | Departamento de Economía | Carlos A. Yanes</span></div>
 
 <!-- this adds the link footer to all slides, depends on my-footer class in css-->
 
@@ -129,3 +129,206 @@ class: middle, center
 background-image: url(https://media.giphy.com/media/DTPr0CgFihcSLdt6md/giphy.gif)
 background-size: cover
 #.fat[.fancy[Empecemos!!]]
+
+---
+# Generalidades
+
+--
+
+`r fa("igloo", fill="red")` La prueba se desarrolla en un ámbito de **4 horas y media** aproximadamente.
+
+--
+
+`r fa("igloo", fill="orange")` contiene alrededor **178** preguntas en promedio.
+
+--
+
+`r fa("igloo", fill="green")` Los **módulos** tienen un número de referencias para las competencias *interpretativas* de *formulación* y *ejecución* y por ultimo pero no poco importante la capacidad *argumentativa*
+
+--
+
+### En sintesis, debe saber .saltinline[.fancy[responder muy bien!!]]
+
+---
+class: middle, center
+background-image: url(https://media.giphy.com/media/LJEZNDs5J0PersBSau/giphy.gif)
+background-size: cover
+
+
+---
+.fat[.fancy[Pregunta 1]]
+
+--
+
+`r fa("laptop", fill="red")` Un empresario local dice que la producción de su empresa exhibe rendimientos constantes a escala. Una función que represente este tipo de rendimientos puede ser expresada como:
+
+--
+
+A. $F(K,L)= AK^{0.7}L^{0.4}$
+
+B. $F(K,L)= 2A+K^{1/2}+L^{3/2}$
+
+C. $F(K,L)= AK^{2}L^{2}$
+
+D. $F(K,L)= 2K^{4/5}L^{1/5}$
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[D]
+
+---
+.fat[.fancy[Pregunta 2]]
+
+--
+
+`r fa("laptop", fill="red")` Tome como referencia la siguiente tabla con información de consumo de una persona que regularmente consume cigarrillos y vaper. El costo de un cigarrillo es de $1000 y para el vaper es del doble del precio del cigarrillo.
+
+
+| Cantidad Cigarrillo | Utilidad | Umg (Cig)   | Cantidad Vaper     | Utilidad | Umg (Vaper) |
+| --------------------| -------- | ------------|------------------- | -------- | ------------|
+| 1                   | 9        | 9           | 1                  | 20       | 10          |
+| 2                   | 8        | 8           | 2                  | 16       | 8           |
+| 3                   | 7        | 7           | 3                  | 12       | 6           |
+| 4                   | 6        | 6           | 4                  | 8        | 4           |
+| 5                   | 5        | 5           | 5                  | 4        | 2           |
+
+
+--
+
+A. Debe consumir cuatro unidades de cigarrillos y tan solo tres unidades de vaper
+
+B. Lo mejor es que no consuma ninguno de los dos ya que es perjudicial para su salud
+
+C. El consumo optimo es de dos unidades de cigarrillos e igualmente de vaper respectivamente
+
+D. Debe tan solo consumir una unidad de cada bien ya que es lo mas alto en utilidad
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[A]
+
+---
+.fat[.fancy[Pregunta 3]]
+
+--
+
+`r fa("laptop", fill="red")` Considere que un individuo tiene una función de utilidad $f(x,y)=3x^2+5y$ y la utilidad marginas del bien (x) es $Umg=6x$ y para el bien (y) $Umg=5$. La tasa marginal de sustitución viene a indicarle:
+
+--
+
+A. El bien (x) le da mas utilidad, si el precio de (x) es menor a (y), entonces gastará todo en él
+
+B. Podemos intercambiar 5 unidades del bien (x) por 6 unidades del bien (y) para esta parte
+
+C. Al ser una función de utilidad de sustitutos perfectos, esta será siempre constante
+
+D. La decisión de intercambio que en esta oportunidad le permite cambiar 1.2 unidades de (x) por una de (y)
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[A]
+
+---
+.fat[.fancy[Pregunta 4]]
+
+--
+
+`r fa("laptop", fill="red")` En un mercado de venta de bienes y servicios han encontrado en su departamento de analitica un modelo de demanda que esta determinado por $Q_{d}=14-3P+I+2P_{S}-P_{C}$. Donde $P$ es el precio de ese bien, $I$ son los ingresos que tiene la persona por su actividad laboral, $P_s$ es el precio de la competencia y $P_c$ es el precio de algunos complementos del bien que se venden en el mismo negocio. La elasticidad precio de la demanda cuando el precio es de 1, el individuo tiene un ingreso de 10, el precio de la competencia es de 2 y el precio de los accesorios es de 1, viene a ser:
+
+--
+
+A. Elástica, la sensibilidad es muy alta debido a la alta dependencia con el precio
+
+B. Unitaria, la variación es constante y se mueve en la misma que el precio del producto
+
+C. Totalmente inelástica, ya que tiende a 1 la variación con respecto al precio
+
+D. Inelástica, no es muy sensible la variación del consumo cuando varia el precio
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[D]
+---
+.fat[.fancy[Pregunta 5]]
+
+--
+
+Se ha recopilado información de un grupo de personas para conocer que tanto es tan dispuesto(a)s a pagar por un bien que se exhibe en una tienda y los resultados fueron los siguientes:
+
+| Nombre        | Disponibilidad a pagar          |
+|---------------|---------------------------------|
+| Andres        | $1'300.000                      |
+| Angie         | 1'250.000                       |
+| Laura         | 1'150.000                       |
+| Maria         | 1'100.000                       |
+
+Si el precio de venta fuera de 750.000 cuando es el excedente de la sociedad y que personas lo comprarían?
+
+--
+
+A. Lo comprarían todos los encuestados y el excedente ronda los 5 millones
+
+B. Solo lo podría comprar Maria y en este caso el excedente es de 252 mil pesos
+
+C. Todos tienen posibilidad de consumirlo y el excedente es de 2 millones
+
+D. Solo lo podría comprar Andrés y Angie ya que son los que mas dispuesto estan de hacerlo
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[C]
+
+
+---
+.fat[.fancy[Pregunta 6]]
+
+--
+
+`r fa("laptop", fill="red")` El gobierno nacional intenta abrir una licitación para la construcción de la vía Melgar-Bogotá cuya extensión es de alrededor de unos 117 kms. En el proceso participan 5 firmas bastante reconocidas a nivel nacional. El objeto del gobierno es que la firma que se gane la licitación se le premie con la mejor oferta que han hecho las otras. El mecanismo se quiere que sea competitivo, por ende ninguna sabe lo que puja la otra. Que estrategia en materia de subastas debe aplicar el gobierno?
+
+--
+
+A. Subastas de primer precio abierta
+
+B. Subasta cerrada a segundo precio
+
+C. Subasta Inversa a primer precio
+
+D. Subasta de todos pagan
+
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[B]
+
+---
+.fat[.fancy[Pregunta 7]]
+
+--
+
+Considere un mundo en el que no hay certeza plena para la toma de decisiones. Si Guillermo está dispuesto a pagar 300.000 por un seguro contra una pérdida de 8.000.000 que tiene una probabilidad del 4%, se afirma que Guillermo es:
+
+--
+
+A. Amante al riesgo
+
+B. Irracional
+
+C. Neutral al riesgo
+
+D. Adverso al riesgo
+
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[D]
+
+---
+class: center, middle
+
+# Gracias por su atención !!
+Correo: `cayanes@uninorte.edu.co`
+### Exitos totales!!
+
+
+
