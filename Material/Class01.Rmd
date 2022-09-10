@@ -131,6 +131,16 @@ background-size: cover
 #.fat[.fancy[Empecemos!!]]
 
 ---
+class: inverse, middle
+
+.fat[¡Recuerda!
+Los exámenes Saber evalúan competencias, por tanto, en las 
+preguntas encontrarás una situación (que debes tratar de 
+entender) en la que tendrás que aplicar tus conocimientos
+para tomar decisiones y elegir la
+mejor respuesta.]
+
+---
 # Generalidades
 
 --
