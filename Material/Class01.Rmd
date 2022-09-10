@@ -191,10 +191,10 @@ D. $F(K,L)= 2K^{4/5}L^{1/5}$
 
 --
 
-`r fa("laptop", fill="red")` Tome como referencia la siguiente tabla con información de consumo de una persona que regularmente consume cigarrillos y vaper. El costo de un cigarrillo es de $1000 y para el vaper es del doble del precio del cigarrillo.
+`r fa("laptop", fill="red")` Tome como referencia la siguiente tabla con información de una persona que regularmente consume cigarrillos y vaper. El costo de un cigarrillo es de $1000 y para el vaper es del doble del precio del cigarrillo. Qué es lo optimo que debe hacer?
 
 
-| Cantidad Cigarrillo | Utilidad | Umg (Cig)   | Cantidad Vaper     | Utilidad | Umg (Vaper) |
+| Cantidad Cigarrillo | Utilidad | Umgx ($Cig)   | Cantidad Vaper     | Utilidad | Umg x (Vaper) |
 | --------------------| -------- | ------------|------------------- | -------- | ------------|
 | 1                   | 9        | 9           | 1                  | 20       | 10          |
 | 2                   | 8        | 8           | 2                  | 16       | 8           |
@@ -222,7 +222,7 @@ D. Debe tan solo consumir una unidad de cada bien ya que es lo mas alto en utili
 
 --
 
-`r fa("laptop", fill="red")` Considere que un individuo tiene una función de utilidad $f(x,y)=3x^2+5y$ y la utilidad marginas del bien (x) es $Umg=6x$ y para el bien (y) $Umg=5$. La tasa marginal de sustitución viene a indicarle:
+`r fa("laptop", fill="red")` Considere a un individuo que tiene una función de utilidad $f(x,y)=3x^2+5y$ y la utilidad marginal del bien (x) es $Umg=6x$ y para el bien (y) $Umg=5$. La tasa marginal de sustitución en este caso indica:
 
 --
 
@@ -243,7 +243,7 @@ D. La decisión de intercambio que en esta oportunidad le permite cambiar 1.2 un
 
 --
 
-`r fa("laptop", fill="red")` En un mercado de venta de bienes y servicios han encontrado en su departamento de analitica un modelo de demanda que esta determinado por $Q_{d}=14-3P+I+2P_{S}-P_{C}$. Donde $P$ es el precio de ese bien, $I$ son los ingresos que tiene la persona por su actividad laboral, $P_s$ es el precio de la competencia y $P_c$ es el precio de algunos complementos del bien que se venden en el mismo negocio. La elasticidad precio de la demanda cuando el precio es de 1, el individuo tiene un ingreso de 10, el precio de la competencia es de 2 y el precio de los accesorios es de 1, viene a ser:
+`r fa("laptop", fill="red")` En un mercado de venta de bienes y servicios han encontrado en su departamento de analítica un modelo de demanda que esta determinado por $Q_{d}=14-3P+I+2P_{S}-P_{C}$. Donde $P$ es el precio de ese bien, $I$ son los ingresos que tiene la persona por su actividad laboral, $P_s$ es el precio de la competencia y $P_c$ es el precio de algunos complementos del bien que se venden en el mismo negocio. Qué indica la elasticidad precio de la demanda cuando el precio es de $1, el individuo tiene un ingreso de 10, el precio de la competencia es 2 y el precio de los accesorios es 1?
 
 --
 
@@ -294,7 +294,7 @@ D. Solo lo podría comprar Andrés y Angie ya que son los que mas dispuesto esta
 
 --
 
-`r fa("laptop", fill="red")` El gobierno nacional intenta abrir una licitación para la construcción de la vía Melgar-Bogotá cuya extensión es de alrededor de unos 117 kms. En el proceso participan 5 firmas bastante reconocidas a nivel nacional. El objeto del gobierno es que la firma que se gane la licitación se le premie con la mejor oferta que han hecho las otras. El mecanismo se quiere que sea competitivo, por ende ninguna sabe lo que puja la otra. Que estrategia en materia de subastas debe aplicar el gobierno?
+`r fa("laptop", fill="red")` El gobierno nacional intenta abrir una licitación para la construcción de la vía Melgar-Bogotá cuya extensión es de alrededor de unos 117 kms. En el proceso participan 5 firmas bastante reconocidas a nivel nacional. El objeto del gobierno es que la firma que se gane la licitación se le premie con la mejor oferta que han hecho las otras. El mecanismo se quiere que sea competitivo, por ende ninguna sabe lo que puja la otra. Qué estrategia en materia de subastas debe aplicar el gobierno?
 
 --
 
@@ -338,7 +338,7 @@ class: center, middle
 
 # Gracias por su atención !!
 Correo: `cayanes@uninorte.edu.co`
-### Exitos totales!!
+### Éxitos totales!!
 
 
 
