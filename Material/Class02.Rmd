@@ -1,0 +1,405 @@
+---
+title: "Modulo Econometría"
+subtitle: "Pruebas Saber Pro"
+author: "Carlos A Yanes"
+date: "2022/10/07 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "css/sfah.css", "css/fonts.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      beforeInit: "https://platform.twitter.com/widgets.js"
+    seal: false 
+    includes:
+      in_header: header.html
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(knitr)
+library(pacman)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+# options(knitr.table.format = "html")
+library(tidyverse)
+library(babynames)
+library(fontawesome) # from github: https://github.com/rstudio/fontawesome
+p_load(ggplot2, gridExtra, ggthemes, latex2exp, dplyr, broom, knitr, leaflet, magrittr, viridis)
+# Colors
+red_pink <- "#e64173"
+turquoise <- "#20B2AA"
+grey_light <- "grey70"
+grey_mid <- "grey50"
+grey_dark <- "grey20"
+# Themes
+theme_axes_y <- theme_void() + theme(
+  text = element_text(family = "sans"),
+  axis.title = element_text(size = 11),
+  plot.title = element_text(size = 11, hjust = 0.5),
+  axis.title.x = element_text(hjust = .95, margin = margin(0.15, 0, 0, 0, unit = "lines")),
+  axis.title.y = element_text(vjust = .95, margin = margin(0, -0.2, 0, 0, unit = "lines")),
+  axis.text.y = element_text(
+    size = 10, angle = 0, hjust = 0.9, vjust = 0.5,
+    margin = margin(0, 0.4, 0, 0, unit = "lines")
+  ),
+  axis.line = element_line(
+    color = grey_light,
+    size = 0.25,
+    arrow = arrow(angle = 30, length = unit(0.07, "inches")
+  )),
+  plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
+  legend.position = "none"
+)
+theme_axes_x <- theme_void() + theme(
+  text = element_text(family = "sans"),
+  axis.title = element_text(size = 11),
+  plot.title = element_text(size = 11, hjust = 0.5),
+  axis.title.x = element_text(hjust = .95, margin = margin(0.15, 0, 0, 0, unit = "lines")),
+  axis.title.y = element_text(vjust = .95, margin = margin(0, -0.2, 0, 0, unit = "lines")),
+  axis.text.x = element_text(
+    size = 10, angle = 0, hjust = 0.9, vjust = 0.5,
+    margin = margin(0, 0.4, 0, 0, unit = "lines")
+  ),
+  axis.line = element_line(
+    color = grey_light,
+    size = 0.25,
+    arrow = arrow(angle = 30, length = unit(0.07, "inches")
+  )),
+  plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
+  legend.position = "none"
+)
+theme_set(theme_gray(base_size = 11))
+# Knitr options
+opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  warning = F,
+  message = F
+)
+```
+
+layout: true
+  
+<div class="my-footer"><span>Uninorte | Departamento de Economía | Carlos A. Yanes</span></div>
+
+<!-- this adds the link footer to all slides, depends on my-footer class in css-->
+
+---
+name: xaringan-title
+class: left, middle, inverse
+background-image: url(img/user2.jpeg)
+background-size: cover
+
+# Pruebas Saber Pro
+
+<img src="img/logoblancodepar.png" width="280" />
+
+### .fancy[Modulo Econometría]
+
+.large[Carlos Yanes | Departamento de Economía | `r Sys.Date()`]
+
+---
+class: middle, inverse
+
+.left-column[
+
+# `r emo::ji("confused")`
+
+]
+
+.right-column[
+# Y ahora que...??
+]
+
+---
+name: another
+class: middle, inverse
+
+# Hora  <br> .acid[.fancy[de Trabajar!!]]
+
+---
+.fat[.fancy[Pregunta 1]]
+
+--
+
+`r fa("laptop", fill="red")` Un par de firmas desean ver si un grupo de variables como `precio de la competencia` y el `ingreso de los hogares` impactan o tienen efecto en las ventas que regularmente tienen en sus operaciones diarias. La manera correcta de hacerlo es estableciendo un modelo restringido y otro que no contenga estas restricciones, lo que se conoce como la prueba F. Lo mas adecuado, para el caso de medir si son o no importantes es hacer uso de cierta hipótesis para eso. Le preguntan, cuál -para este caso- se adaptaría para esta situación?
+
+--
+
+A. $h_o:\beta_i\neq \beta_j\neq 0$
+
+B. $h_o:\beta_i  > \beta_j>0$
+
+C. $h_o:\beta_i  = \beta_j \sim N(0, \sigma)$
+
+D. $h_o:\beta_i  = \beta_j=0$
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[D]
+
+---
+.fat[.fancy[Pregunta 2]]
+
+--
+
+`r fa("laptop", fill="red")` Sea un proceso AR(1) de una serie de tiempo de cierta variable $Y_t=0.5Y_{t-1}+\epsilon_t$, donde $\epsilon_{t-1}$ que es el residuo o error sigue un proceso ruido blanco $\epsilon_t \sim (0,\sigma^{2}_e)$. La varianza de la variable $Y_t$ puede ser establecida como:
+
+--
+
+A. $2\sigma^2$
+
+B. $\frac{3\sigma^2}{4}$
+
+C. $\frac{1\sigma^4}{2}$
+
+D. $\frac{0.25}{\sigma^2}$
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[B]
+
+---
+.fat[.fancy[Pregunta 3]]
+
+--
+
+`r fa("laptop", fill="red")` Digamos que en Colombia se ha establecido un modelo de consumo agregado siguiendo las estipulaciones del modelo propuesto por Friedman tal que $C_t=\beta_1+\beta_2X_t+u_t$. Donde $C_t$ es el consumo agregado en un periodo especifico, $X_t$ no es observable directamente pero hace referencia al PIB a precios constantes y en dolares. Pero se asume una hipótesis de expectativas adaptativas que simplificando viene a ser $C_t=\alpha_1+\alpha_2X_t+\alpha_{t-1}C_{t-1} +v_t$. La estimación arroja los siguientes parámetros:
+
+$$
+\begin{aligned}
+\widehat{C}_t=&1038,403+0,4043X_t+0,5207C_{t-1}\\
+\text{s.e}\;=&\; (1.012)\quad \; \; \; (0.0982) \quad \; \; \; (2.1743)
+\end{aligned}
+$$
+De acuerdo a lo anterior podemos de forma general concluir que:
+
+--
+
+A. Los parámetros $\alpha_2$ y $\alpha_3$ son significativos al 95% de nivel de confianza.
+
+B. El modelo establecido esta incorrectamente especificado y hay que revisar la teoría propuesta.
+
+C. En este caso los parámetros obtenidos $\alpha_i$ no son estadisticamente significativos al nivel de confianza del 95%. 
+
+D. El residuo del modelo esta altamente correlacionado con los predictores establecidos en esta parte. 
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[C]
+
+---
+.fat[.fancy[Pregunta 4]]
+
+--
+
+`r fa("laptop", fill="red")` El gobierno Colombiano ha contratado a un grupo de economistas adscritos al ministerio de salud y quieren mirar si el gasto en salud depende de ciertas variables como el `ingreso` y la `edad` del individuo. Establecen un modelo teórico de tal manera que:
+
+$$Ln(Salud)_i=\beta_0+\beta_1ingresos_i+\beta_2edad_i+u_i$$
+Digamos que el estimador $\widehat{\beta}_2=0.17$. Una interpretación adecuada corresponde a:
+
+--
+
+--
+
+A. Por un año adicional que tenga un individuo su disponibilidad a gastar en salud  aumenta en un 17%.
+
+B. En la medida que la salud del paciente se deteriora tiene una probabilidad de un 0.17% de hacer un mayor gasto en salud.
+
+C. Si el ingreso es cero, los individuos tienen una disponibilidad a gastar en salud de un 0.17%.
+
+D. En la medida que la edad de la persona aumenta manteniendo al ingreso constante su disponibilidad a gastar en salud aumenta en un 0.17%. 
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[A]
+
+---
+.fat[.fancy[Pregunta 5]]
+
+--
+
+`r fa("laptop", fill="red")` Un modelo de tasa de desempleo para colombia ha sido estipulado como:
+
+$$
+\begin{aligned}
+T\widehat{D}_t=&\;2,743+1,181D_t-1,427V_{t}-0,812(D_tV_t)\\
+\text{t}\;=&\; (29.192)\;(3.198)\; \; \;\; (2.1743)\; \; \; \; \;(-1.9843)\\
+R^2=&\;0.94
+\end{aligned}
+$$
+Donde: TD = tasa de desempleo en %, V = tasa de trabajo vacante en %, D = 1, para el período que comienza el cuarto trimestre de 2019; D = 0, para el período anterior al cuarto trimestre de 2019, t = tiempo, medido en trimestres.
+
+¿Cuáles son las expectativas a priori respecto a la relación entre las tasas de desempleo y vacantes?
+
+--
+
+A. Si es estadísticamente distinta del período anterior al cuarto trimestre de 2019 debido a que la tasa de desempleo diferencial entre la categoría base y el período que comienza el cuarto trimestre de 2019 es de 1.18%.
+
+B. La relación que existe entre las tasas de desempleo y vacantes es inversa, es decir, si se da un incremento porcentual del 1% en la tasa de vacante se estima que la tasa de desempleo disminuirá en 1.4%.
+
+C. Si el ingreso es cero, los individuos tienen derecho a un subsidio del 15% entendiendose que existe una relación directa entre ambas variables y el gobierno intecede por éstos.
+
+D. En la medida que las vacantes aumentan de forma constante de un 1.4% se puede deducir que todos los trimestres absorben el efecto producido por las vacantes en la economía.
+
+---
+name: buter
+class: middle, inverse
+
+# `r fa("check", fill="green")` CLAVE .fancy[B]
+
+---
+.fat[.fancy[Pregunta 6]]
+
+--
+
+`r fa("laptop", fill="red")` La siguiente figura muestra la distribución del estimador $\beta_1$: A, B, y C con media de 20.
+
+```{R, eval = T, echo = F, dev = "svg", fig.height = 4.5, message = F, warning = F}
+
+# Colors
+red_pink <- "#e64173"
+turquoise <- "#20B2AA"
+grey_light <- "grey70"
+grey_mid <- "grey50"
+grey_dark <- "grey20"
+
+# Tres distribuciones
+ggplot(data = tibble(x = c(-5, 45)), aes(x)) +
+stat_function(
+  fun = dchisq, args = list(df = 2.5), n = 1e4,
+  geom = "area", fill = "grey10", color = "black", alpha = 0.4, size = 0.3
+) +
+stat_function(
+  fun = dnorm, args = list(mean = 20, sd = 3), n = 5e3,
+  geom = "area", fill = "grey50", color = "black", alpha = 0.3, size = 0.3
+) +
+stat_function(
+  fun = dnorm, args = list(mean = 20, sd = 7), n = 5e3,
+  geom = "area", fill = "grey70", color = "black", alpha = 0.3, size = 0.3
+) +
+stat_function(
+  fun = dnorm, args = list(mean = 25, sd = 8), n = 5e3,
+  geom = "area", fill = "grey10", color = "black", alpha = 0.3, size = 0.3
+) +
+geom_vline(xintercept = 20, linetype = "dotted", alpha = 0.5) +
+annotate(geom = "text", x = 20, y = -0.015, label = TeX("$\\beta_{1}$"), hjust = 0.5, size = 5) +
+annotate(geom = "text", x = 2.75, y = 0.2, label = "A") +
+annotate(geom = "text", x = 16.8, y = 0.1, label = "B") +
+annotate(geom = "text", x = 32, y = 0.02, label = "C") +
+annotate(geom = "text", x = 40, y = 0.03, label = "D") +
+theme_void()
+```
+
+
+Cuál de los estimadores, si así ocurre, viene a ser insesgado?
+
+---
+.fat[.fancy[Pregunta 6]]
+
+--
+
+A. El estimador $B$ claramente, aparte es mas eficiente y consistente.
+
+B. Para este caso el estimador $A$ cumple con la eficiencia como logramos denotar en el gráfico propuesto.
+
+C. El estimador $C$ puesto que $E(Y|X)=20$ y este cumple con las condiciones establecidas.
+
+D. Aunque no tiene mínima varianza el estimador $D$ posee la característica de ser un estimador insesgado.
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[A]
+
+---
+.fat[.fancy[Pregunta 7]]
+
+--
+
+`r fa("laptop", fill="red")` Observe la siguiente distribución de los distintos errores/residuos de un conjunto de modelos que se han estimado.
+
+```{R, echo = F, dev = "svg", fig.height = 4.5}
+set.seed(123456)
+n <- 115
+# No 
+p1 <- ggplot(data = tibble(x = 1:n, u = rnorm(n)), aes(x = x, y = u)) +
+geom_hline(yintercept = 0) +
+scale_y_continuous(breaks = 0) +
+geom_point() +
+ggtitle("Modelo A") +
+theme_axes_y
+# Homocedasticas
+p2 <- ggplot(data = tibble(x = 1:n, u = rnorm(n, sd = abs(sin(x/(100))) + 0.1)), aes(x = x, y = u)) +
+geom_hline(yintercept = 0) +
+scale_y_continuous(breaks = 0) +
+geom_point() +
+ggtitle("Modelo B") +
+theme_axes_y
+# Peor 1
+p3 <- ggplot(data = tibble(x = 1:n, u = runif(n, min = -250, max = (x-50.5)^2)), aes(x = x, y = u)) +
+geom_hline(yintercept = 0) +
+scale_y_continuous(breaks = 0) +
+geom_point() +
+ggtitle("Modelo C") +
+theme_axes_y
+
+# ni se diga
+
+# Peor
+p4 <- ggplot(data = tibble(x = 1:n, u = runif(n, min = -230, max = (x-150.5)^2)), aes(x = x, y = u)) +
+geom_hline(yintercept = 0) +
+scale_y_continuous(breaks = 0) +
+geom_point() +
+ggtitle("Modelo D") +
+theme_axes_y
+
+
+# Graficamos todas
+grid.arrange(p1, p2, p3, p4, nrow = 2)
+```
+
+De estos resultados, quien no viola el supuesto de homocedasticidad?
+
+---
+.fat[.fancy[Pregunta 7]]
+
+--
+
+A. El modelo $B$ los residuos son constantes y con menor dispersión.
+
+B. Si logramos observar el modelo $A$ cumple con el supuesto de $var(u_i)=\sigma^2$.
+
+C. El modelo $D$ puesto que $Var(Y)=1.7$ y este cumple con las condiciones establecidas.
+
+D. Aunque no tiene mínima varianza el modelo $C$ posee la característica de ser ser invariante en el tiempo.
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[B]
+
+---
+.fat[.fancy[Pregunta 8]]
+
+`r fa("laptop", fill="red")` Se ha planteado el siguiente modelo de una entidad privada para mirar si en alguna parte existe un grupo de variables que puedan determinar el gasto en salud
+
+
+$$Salud_i=\beta_0+\beta_1ingresos_i+\beta_2edad_i+\beta_3educación_i+u_i$$
+Qué tipo de datos debe tener para lograr estimar la anterior ecuación?
+
+--
+
+A. Datos de una base de corte transversal que permiten mirar en un tiempo determinado los efectos de cada variable por individuo.
+
+B. Si la idea es mirar un grupo de individuos en varios momentos del tiempo entonces se debe mirar los datos longitudinales.
+
+C. Un grupo de datos consecuentes en el tiempo, por ende una serie puede ser útil para esta parte.
+
+D. Datos de corte repetido en distintos momentos del tiempo.
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[A]
+

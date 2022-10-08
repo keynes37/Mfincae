@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Modulo Econometría</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Carlos A Yanes" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/sfah.css" type="text/css" />
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+layout: true
+  
+&lt;div class="my-footer"&gt;&lt;span&gt;Uninorte | Departamento de Economía | Carlos A. Yanes&lt;/span&gt;&lt;/div&gt;
+
+&lt;!-- this adds the link footer to all slides, depends on my-footer class in css--&gt;
+
+---
+name: xaringan-title
+class: left, middle, inverse
+background-image: url(img/user2.jpeg)
+background-size: cover
+
+# Pruebas Saber Pro
+
+&lt;img src="img/logoblancodepar.png" width="280" /&gt;
+
+### .fancy[Modulo Econometría]
+
+.large[Carlos Yanes | Departamento de Economía | 2022-10-07]
+
+---
+class: middle, inverse
+
+.left-column[
+
+# 😕
+
+]
+
+.right-column[
+# Y ahora que...??
+]
+
+---
+name: another
+class: middle, inverse
+
+# Hora  &lt;br&gt; .acid[.fancy[de Trabajar!!]]
+
+---
+.fat[.fancy[Pregunta 1]]
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/></svg> Un par de firmas desean ver si un grupo de variables como `precio de la competencia` y el `ingreso de los hogares` impactan o tienen efecto en las ventas que regularmente tienen en sus operaciones diarias. La manera correcta de hacerlo es estableciendo un modelo restringido y otro que no contenga estas restricciones, lo que se conoce como la prueba F. Lo mas adecuado, para el caso de medir si son o no importantes es hacer uso de cierta hipótesis para eso. Le preguntan, cuál -para este caso- se adaptaría para esta situación?
+
+--
+
+A. `\(h_o:\beta_i\neq \beta_j\neq 0\)`
+
+B. `\(h_o:\beta_i  &gt; \beta_j&gt;0\)`
+
+C. `\(h_o:\beta_i  = \beta_j \sim N(0, \sigma)\)`
+
+D. `\(h_o:\beta_i  = \beta_j=0\)`
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> CLAVE .fat[D]
+
+---
+.fat[.fancy[Pregunta 2]]
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/></svg> Sea un proceso AR(1) de una serie de tiempo de cierta variable `\(Y_t=0.5Y_{t-1}+\epsilon_t\)`, donde `\(\epsilon_{t-1}\)` que es el residuo o error sigue un proceso ruido blanco `\(\epsilon_t \sim (0,\sigma^{2}_e)\)`. La varianza de la variable `\(Y_t\)` puede ser establecida como:
+
+--
+
+A. `\(2\sigma^2\)`
+
+B. `\(\frac{3\sigma^2}{4}\)`
+
+C. `\(\frac{1\sigma^4}{2}\)`
+
+D. `\(\frac{0.25}{\sigma^2}\)`
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> CLAVE .fat[B]
+
+---
+.fat[.fancy[Pregunta 3]]
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/></svg> Digamos que en Colombia se ha establecido un modelo de consumo agregado siguiendo las estipulaciones del modelo propuesto por Friedman tal que `\(C_t=\beta_1+\beta_2X_t+u_t\)`. Donde `\(C_t\)` es el consumo agregado en un periodo especifico, `\(X_t\)` no es observable directamente pero hace referencia al PIB a precios constantes y en dolares. Pero se asume una hipótesis de expectativas adaptativas que simplificando viene a ser `\(C_t=\alpha_1+\alpha_2X_t+\alpha_{t-1}C_{t-1} +v_t\)`. La estimación arroja los siguientes parámetros:
+
+$$
+`\begin{aligned}
+\widehat{C}_t=&amp;1038,403+0,4043X_t+0,5207C_{t-1}\\
+\text{s.e}\;=&amp;\; (1.012)\quad \; \; \; (0.0982) \quad \; \; \; (2.1743)
+\end{aligned}`
+$$
+De acuerdo a lo anterior podemos de forma general concluir que:
+
+--
+
+A. Los parámetros `\(\alpha_2\)` y `\(\alpha_3\)` son significativos al 95% de nivel de confianza.
+
+B. El modelo establecido esta incorrectamente especificado y hay que revisar la teoría propuesta.
+
+C. En este caso los parámetros obtenidos `\(\alpha_i\)` no son estadisticamente significativos al nivel de confianza del 95%. 
+
+D. El residuo del modelo esta altamente correlacionado con los predictores establecidos en esta parte. 
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> CLAVE .fat[C]
+
+---
+.fat[.fancy[Pregunta 4]]
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/></svg> El gobierno Colombiano ha contratado a un grupo de economistas adscritos al ministerio de salud y quieren mirar si el gasto en salud depende de ciertas variables como el `ingreso` y la `edad` del individuo. Establecen un modelo teórico de tal manera que:
+
+`$$Ln(Salud)_i=\beta_0+\beta_1ingresos_i+\beta_2edad_i+u_i$$`
+Digamos que el estimador `\(\widehat{\beta}_2=0.17\)`. Una interpretación adecuada corresponde a:
+
+--
+
+--
+
+A. Por un año adicional que tenga un individuo su disponibilidad a gastar en salud  aumenta en un 17%.
+
+B. En la medida que la salud del paciente se deteriora tiene una probabilidad de un 0.17% de hacer un mayor gasto en salud.
+
+C. Si el ingreso es cero, los individuos tienen una disponibilidad a gastar en salud de un 0.17%.
+
+D. En la medida que la edad de la persona aumenta manteniendo al ingreso constante su disponibilidad a gastar en salud aumenta en un 0.17%. 
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> CLAVE .fat[A]
+
+---
+.fat[.fancy[Pregunta 5]]
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/></svg> Un modelo de tasa de desempleo para colombia ha sido estipulado como:
+
+$$
+`\begin{aligned}
+T\widehat{D}_t=&amp;\;2,743+1,181D_t-1,427V_{t}-0,812(D_tV_t)\\
+\text{t}\;=&amp;\; (29.192)\;(3.198)\; \; \;\; (2.1743)\; \; \; \; \;(-1.9843)\\
+R^2=&amp;\;0.94
+\end{aligned}`
+$$
+Donde: TD = tasa de desempleo en %, V = tasa de trabajo vacante en %, D = 1, para el período que comienza el cuarto trimestre de 2019; D = 0, para el período anterior al cuarto trimestre de 2019, t = tiempo, medido en trimestres.
+
+¿Cuáles son las expectativas a priori respecto a la relación entre las tasas de desempleo y vacantes?
+
+--
+
+A. Si es estadísticamente distinta del período anterior al cuarto trimestre de 2019 debido a que la tasa de desempleo diferencial entre la categoría base y el período que comienza el cuarto trimestre de 2019 es de 1.18%.
+
+B. La relación que existe entre las tasas de desempleo y vacantes es inversa, es decir, si se da un incremento porcentual del 1% en la tasa de vacante se estima que la tasa de desempleo disminuirá en 1.4%.
+
+C. Si el ingreso es cero, los individuos tienen derecho a un subsidio del 15% entendiendose que existe una relación directa entre ambas variables y el gobierno intecede por éstos.
+
+D. En la medida que las vacantes aumentan de forma constante de un 1.4% se puede deducir que todos los trimestres absorben el efecto producido por las vacantes en la economía.
+
+---
+name: buter
+class: middle, inverse
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> CLAVE .fancy[B]
+
+---
+.fat[.fancy[Pregunta 6]]
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/></svg> La siguiente figura muestra la distribución del estimador `\(\beta_1\)`: A, B, y C con media de 20.
+
+&lt;img src="Class02_files/figure-html/unnamed-chunk-1-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+Cuál de los estimadores, si así ocurre, viene a ser insesgado?
+
+---
+.fat[.fancy[Pregunta 6]]
+
+--
+
+A. El estimador `\(B\)` claramente, aparte es mas eficiente y consistente.
+
+B. Para este caso el estimador `\(A\)` cumple con la eficiencia como logramos denotar en el gráfico propuesto.
+
+C. El estimador `\(C\)` puesto que `\(E(Y|X)=20\)` y este cumple con las condiciones establecidas.
+
+D. Aunque no tiene mínima varianza el estimador `\(D\)` posee la característica de ser un estimador insesgado.
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> CLAVE .fat[A]
+
+---
+.fat[.fancy[Pregunta 7]]
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/></svg> Observe la siguiente distribución de los distintos errores/residuos de un conjunto de modelos que se han estimado.
+
+&lt;img src="Class02_files/figure-html/unnamed-chunk-2-1.svg" style="display: block; margin: auto;" /&gt;
+
+De estos resultados, quien no viola el supuesto de homocedasticidad?
+
+---
+.fat[.fancy[Pregunta 7]]
+
+--
+
+A. El modelo `\(B\)` los residuos son constantes y con menor dispersión.
+
+B. Si logramos observar el modelo `\(A\)` cumple con el supuesto de `\(var(u_i)=\sigma^2\)`.
+
+C. El modelo `\(D\)` puesto que `\(Var(Y)=1.7\)` y este cumple con las condiciones establecidas.
+
+D. Aunque no tiene mínima varianza el modelo `\(C\)` posee la característica de ser ser invariante en el tiempo.
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> CLAVE .fat[B]
+
+---
+.fat[.fancy[Pregunta 8]]
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/></svg> Se ha planteado el siguiente modelo de una entidad privada para mirar si en alguna parte existe un grupo de variables que puedan determinar el gasto en salud
+
+
+`$$Salud_i=\beta_0+\beta_1ingresos_i+\beta_2edad_i+\beta_3educación_i+u_i$$`
+Qué tipo de datos debe tener para lograr estimar la anterior ecuación?
+
+--
+
+A. Datos de una base de corte transversal que permiten mirar en un tiempo determinado los efectos de cada variable por individuo.
+
+B. Si la idea es mirar un grupo de individuos en varios momentos del tiempo entonces se debe mirar los datos longitudinales.
+
+C. Un grupo de datos consecuentes en el tiempo, por ende una serie puede ser útil para esta parte.
+
+D. Datos de corte repetido en distintos momentos del tiempo.
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> CLAVE .fat[A]
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
