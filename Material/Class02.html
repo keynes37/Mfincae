@@ -227,12 +227,10 @@ D. `\(E(Y)=\frac{2}{0.7}\)`
 
 <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> Digamos que en Colombia se ha establecido un modelo de consumo agregado siguiendo las estipulaciones del modelo propuesto por Friedman tal que `\(C_t=\beta_1+\beta_2X_t+u_t\)`. Donde `\(C_t\)` es el consumo agregado en un periodo especifico, `\(X_t\)` no es observable directamente pero hace referencia al PIB a precios constantes y en dolares. Pero se asume una hipótesis de expectativas adaptativas que simplificando viene a ser `\(C_t=\alpha_1+\alpha_2X_t+\alpha_{3}C_{t-1} +v_t\)`. La estimación arroja los siguientes parámetros:
 
-$$
-`\begin{aligned}
+`$$\begin{aligned}
 \widehat{C}_t=&amp;1.456+0.4043X_t+0.5207C_{t-1}\\
 \text{s.e}\;=&amp;\; (1.012)\quad \; \; \; (2.821) \quad \; \; \; (2.1743)
-\end{aligned}`
-$$
+\end{aligned}$$`
 De acuerdo a lo anterior podemos de forma general concluir que:
 
 --
@@ -280,13 +278,11 @@ D. En la medida que el stress de la persona aumenta manteniendo al ingreso const
 
 <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> Un modelo de tasa de desempleo para colombia ha sido estipulado como:
 
-$$
-`\begin{aligned}
+`$$\begin{aligned}
 T\widehat{D}_t=&amp;\;2,743+1,181D_t-1,427V_{t}-0,812(D_tV_t)\\
 \text{t}\;=&amp;\; (29.192)\;(3.198)\; \; \;\; (2.1743)\; \; \; \; \;(-1.9843)\\
 R^2=&amp;\;0.94
-\end{aligned}`
-$$
+\end{aligned}$$`
 Donde: TD = tasa de desempleo en %, V = tasa de trabajo vacante en %, D = 1, para el período que comienza el cuarto trimestre de 2019; D = 0, para el período anterior al cuarto trimestre de 2019, t = tiempo, medido en trimestres.
 
 ¿Cuáles son las expectativas a priori respecto a la relación entre las tasas de desempleo y vacantes?
@@ -420,6 +416,105 @@ D. La habilidad afecta al ingreso pero no se correlaciona con la educación.
 --
 
 <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> CLAVE .fat[A]
+
+---
+.fat[.fancy[Pregunta 11]]
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> Sea el siguiente gráfico de estimadores por Mínimos Cuadrados Ordinarios (MCO) y Mínimos Cuadrados Ponderados
+
+&lt;img src="Class02_files/figure-html/bu01-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+.fat[.fancy[Pregunta 11]]
+
+--
+
+Podemos entonces concluir a partir de lo anterior que:
+
+A. El estimador MCO es insesgado y MCP no lo es
+
+B. El estimador MCP es mucho mas eficiente que el de MCO
+
+C. El estimador MCO es mas eficiente que el de MCP
+
+D. Ambos estimadores convergen en media 0 y varianza constante
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> CLAVE .fat[C]
+
+---
+.fat[.fancy[Pregunta 12]]
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> En el análisis de regresión, ¿cuál es la principal diferencia entre el estimador de Mínimos Cuadrados (MCO) y el estimador de Mínimos Cuadrados Ponderados (MCP)?
+
+A. El MCO asigna pesos iguales a todos los puntos de datos, mientras que el MCP asigna pesos diferentes basados en la varianza de los residuos.
+
+B. El MCO es más adecuado para datos no lineales, mientras que el MCP es preferible para modelos lineales.
+
+C. El MCO siempre produce estimaciones más precisas que el MCP.
+
+D. El MCO solo se utiliza para modelos con una única variable independiente, mientras que el MCP es aplicable a modelos con múltiples variables independientes.
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> CLAVE .fat[A]
+
+---
+.fat[.fancy[Pregunta 13]]
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> Sea la siguiente matriz de varianza de los errores de cierto modelo y que por ende nos dice que tipo de heterocedasticidad posee.
+
+`$$W = 
+\begin{bmatrix}
+    \frac{1}{{\hat{\sigma}_1}^2} &amp; 0 &amp; \dots &amp; 0 \\
+    0 &amp; \frac{1}{{\hat{\sigma}_2}^2} &amp; \dots &amp; 0 \\
+    \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+    0 &amp; 0 &amp; \dots &amp; \frac{1}{{\hat{\sigma}_n}^2}
+\end{bmatrix}$$`
+
+Una forma de corregir es:
+
+--
+
+A. No haciendo nada de correcciones, el modelo es el correcto.
+
+B. Aplicando a cada uno de los elementos el peso de `\(\sigma^3\)`.
+
+C. Aplicando logaritmo a la serie original.
+
+D. Aplicando mínimos cuadrados en dos etapas.
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> CLAVE .fat[B]
+
+---
+.fat[.fancy[Pregunta 14]]
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> Supongamos que un economista está investigando el efecto de la educación en los salarios de los trabajadores. Sin embargo, existe la preocupación de que la educación esté correlacionada con la habilidad innata de una persona, lo que podría sesgar las estimaciones. El economista decide utilizar una variable instrumental para abordar este problema. ¿Cuál de las siguientes afirmaciones describe mejor la función de la variable instrumental en este caso?
+
+--
+
+A. La variable instrumental se utiliza para ajustar las estimaciones de los coeficientes de regresión, mejorando la precisión de las estimaciones.
+
+B. La variable instrumental se utiliza para introducir endogeneidad en el modelo de regresión, permitiendo analizar su efecto en las variables independientes.
+
+C. La variable instrumental se utiliza para eliminar la multicolinealidad entre las variables independientes, asegurando que sean ortogonales entre sí.
+
+D. La variable instrumental se utiliza para controlar la posible correlación entre la educación y la habilidad innata, permitiendo estimar el efecto causal de la educación en los salarios.
+
+--
+
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> CLAVE .fat[D]
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>

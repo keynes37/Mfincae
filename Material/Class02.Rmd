@@ -292,12 +292,10 @@ D. $E(Y)=\frac{2}{0.7}$
 
 `r fa("laptop", fill="red")` Digamos que en Colombia se ha establecido un modelo de consumo agregado siguiendo las estipulaciones del modelo propuesto por Friedman tal que $C_t=\beta_1+\beta_2X_t+u_t$. Donde $C_t$ es el consumo agregado en un periodo especifico, $X_t$ no es observable directamente pero hace referencia al PIB a precios constantes y en dolares. Pero se asume una hipótesis de expectativas adaptativas que simplificando viene a ser $C_t=\alpha_1+\alpha_2X_t+\alpha_{3}C_{t-1} +v_t$. La estimación arroja los siguientes parámetros:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \widehat{C}_t=&1.456+0.4043X_t+0.5207C_{t-1}\\
 \text{s.e}\;=&\; (1.012)\quad \; \; \; (2.821) \quad \; \; \; (2.1743)
-\end{aligned}
-$$
+\end{aligned}$$
 De acuerdo a lo anterior podemos de forma general concluir que:
 
 --
@@ -345,13 +343,11 @@ D. En la medida que el stress de la persona aumenta manteniendo al ingreso const
 
 `r fa("laptop", fill="red")` Un modelo de tasa de desempleo para colombia ha sido estipulado como:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 T\widehat{D}_t=&\;2,743+1,181D_t-1,427V_{t}-0,812(D_tV_t)\\
 \text{t}\;=&\; (29.192)\;(3.198)\; \; \;\; (2.1743)\; \; \; \; \;(-1.9843)\\
 R^2=&\;0.94
-\end{aligned}
-$$
+\end{aligned}$$
 Donde: TD = tasa de desempleo en %, V = tasa de trabajo vacante en %, D = 1, para el período que comienza el cuarto trimestre de 2019; D = 0, para el período anterior al cuarto trimestre de 2019, t = tiempo, medido en trimestres.
 
 ¿Cuáles son las expectativas a priori respecto a la relación entre las tasas de desempleo y vacantes?
@@ -558,6 +554,149 @@ D. La habilidad afecta al ingreso pero no se correlaciona con la educación.
 
 `r fa("check", fill="green")` CLAVE .fat[A]
 
+---
+.fat[.fancy[Pregunta 11]]
 
+--
 
+`r fa("laptop", fill="red")` Sea el siguiente gráfico de estimadores por Mínimos Cuadrados Ordinarios (MCO) y Mínimos Cuadrados Ponderados
+
+```{r, bu01, dev = "svg", echo = F, fig.height = 5}
+# Muestra y repeticiones
+n <- 100      
+reps <- 1e5
+
+# choose epsilon and create a vector of weights as defined above
+epsilon <- 0.8
+w <- c(rep((1 + epsilon) / n, n / 2), 
+       rep((1 - epsilon) / n, n / 2) )
+
+# draw a random sample y_1,...,y_n from the standard normal distribution, 
+# use both estimators 1e5 times and store the result in the vectors 'ols' and 
+# 'weightedestimator'
+
+ols <- rep(NA, reps)
+weightedestimator <- rep(NA, reps)
+
+for (i in 1:reps) {
+  
+  y <- rnorm(n)
+  ols[i] <- mean(y)
+  weightedestimator[i] <- crossprod(w, y)
+  
+}
+
+# plot kernel density estimates of the estimators' distributions: 
+
+# OLS
+plot(density(ols), 
+     col = "purple", 
+     lwd = 2, 
+     main = "Función de estimadores",
+     xlab = "Estimador",
+     ylab = "Densidad")
+
+# weighted
+lines(density(weightedestimator), 
+      col = "steelblue", 
+      lwd = 2) 
+
+# add a dashed line at 0 and add a legend to the plot
+abline(v = 0, lty = 2)
+
+legend('topright', 
+       c("MCO", "Ponderado"), 
+       col = c("purple", "steelblue"), 
+       lwd = 2)
+```
+
+---
+.fat[.fancy[Pregunta 11]]
+
+--
+
+Podemos entonces concluir a partir de lo anterior que:
+
+A. El estimador MCO es insesgado y MCP no lo es
+
+B. El estimador MCP es mucho mas eficiente que el de MCO
+
+C. El estimador MCO es mas eficiente que el de MCP
+
+D. Ambos estimadores convergen en media 0 y varianza constante
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[C]
+
+---
+.fat[.fancy[Pregunta 12]]
+
+--
+
+`r fa("laptop", fill="red")` En el análisis de regresión, ¿cuál es la principal diferencia entre el estimador de Mínimos Cuadrados (MCO) y el estimador de Mínimos Cuadrados Ponderados (MCP)?
+
+A. El MCO asigna pesos iguales a todos los puntos de datos, mientras que el MCP asigna pesos diferentes basados en la varianza de los residuos.
+
+B. El MCO es más adecuado para datos no lineales, mientras que el MCP es preferible para modelos lineales.
+
+C. El MCO siempre produce estimaciones más precisas que el MCP.
+
+D. El MCO solo se utiliza para modelos con una única variable independiente, mientras que el MCP es aplicable a modelos con múltiples variables independientes.
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[A]
+
+---
+.fat[.fancy[Pregunta 13]]
+
+--
+
+`r fa("laptop", fill="red")` Sea la siguiente matriz de varianza de los errores de cierto modelo y que por ende nos dice que tipo de heterocedasticidad posee.
+
+$$W = 
+\begin{bmatrix}
+    \frac{1}{{\hat{\sigma}_1}^2} & 0 & \dots & 0 \\
+    0 & \frac{1}{{\hat{\sigma}_2}^2} & \dots & 0 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    0 & 0 & \dots & \frac{1}{{\hat{\sigma}_n}^2}
+\end{bmatrix}$$
+
+Una forma de corregir es:
+
+--
+
+A. No haciendo nada de correcciones, el modelo es el correcto.
+
+B. Aplicando a cada uno de los elementos el peso de $\sigma^3$.
+
+C. Aplicando logaritmo a la serie original.
+
+D. Aplicando mínimos cuadrados en dos etapas.
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[B]
+
+---
+.fat[.fancy[Pregunta 14]]
+
+--
+
+`r fa("laptop", fill="red")` Supongamos que un economista está investigando el efecto de la educación en los salarios de los trabajadores. Sin embargo, existe la preocupación de que la educación esté correlacionada con la habilidad innata de una persona, lo que podría sesgar las estimaciones. El economista decide utilizar una variable instrumental para abordar este problema. ¿Cuál de las siguientes afirmaciones describe mejor la función de la variable instrumental en este caso?
+
+--
+
+A. La variable instrumental se utiliza para ajustar las estimaciones de los coeficientes de regresión, mejorando la precisión de las estimaciones.
+
+B. La variable instrumental se utiliza para introducir endogeneidad en el modelo de regresión, permitiendo analizar su efecto en las variables independientes.
+
+C. La variable instrumental se utiliza para eliminar la multicolinealidad entre las variables independientes, asegurando que sean ortogonales entre sí.
+
+D. La variable instrumental se utiliza para controlar la posible correlación entre la educación y la habilidad innata, permitiendo estimar el efecto causal de la educación en los salarios.
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[D]
 
