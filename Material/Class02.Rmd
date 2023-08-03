@@ -748,7 +748,7 @@ D. Es mejor que se dediquen al atletismo, hay oportunidad de mejora.
 
 --
 
-`r fa("check", fill="green")` CLAVE .fat[D]
+`r fa("check", fill="green")` CLAVE .fat[A]
 
 ---
 class: inverse, middle, center
