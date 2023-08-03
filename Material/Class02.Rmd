@@ -700,3 +700,58 @@ D. La variable instrumental se utiliza para controlar la posible correlación en
 
 `r fa("check", fill="green")` CLAVE .fat[D]
 
+---
+.fat[.fancy[Pregunta 15]]
+
+--
+
+`r fa("laptop", fill="red")` Sea el siguiente gráfico de las distintas puntuaciones que ha obtenido una institución de puntos de acuerdo a las participaciones que han hecho.
+
+```{r, bu02, dev = "svg", echo = F, fig.height = 5}
+# Cargar la librería necesaria
+library(ggplot2)
+
+# Crear un dataframe con datos de ejemplo
+data <- data.frame(
+  Grupo = rep(c("Fútbol", "Baloncesto", "Tenis", "Natación", "Atletismo", "Esgrima"), each = 10),
+  Puntuaciones = c(78, 85, 90, 72, 88, 80, 88, 92, 75, 83, 68, 73, 85, 92, 79, 87, 93, 88, 90, 95,
+                   65, 72, 78, 82, 70, 68, 74, 80, 88, 82, 88, 95, 92, 89, 78, 85, 83, 77, 86, 90,
+                   55, 62, 58, 52, 60, 58, 53, 65, 59, 62, 45, 50, 67, 74, 72, 68, 75, 69, 73, 70)
+)
+
+# Crear un gráfico de bigotes usando ggplot2
+ggplot(data, aes(x = Grupo, y = Puntuaciones)) +
+  geom_boxplot() +
+  labs(title = "Puntuaciones de Clasificadores de Deportes",
+       x = "Deporte",
+       y = "Puntuaciones") +
+  theme_minimal()
+
+```
+
+---
+.fat[.fancy[Pregunta 15]]
+
+--
+
+Si evaluáramos el perfomance de cada uno de los deportes practicados en el colegio podemos entonces concluir que:
+
+--
+
+A. El colegio es bueno tanto en baloncesto como en natación.
+
+B. En esgrima tiene los peores puntajes pero mejor rendimiento.
+
+C. Natación es el deporte por excelencia de la institución
+
+D. Es mejor que se dediquen al atletismo, hay oportunidad de mejora.
+
+--
+
+`r fa("check", fill="green")` CLAVE .fat[D]
+
+---
+class: inverse, middle, center
+
+# The End
+
