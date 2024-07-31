@@ -34,7 +34,7 @@ background-size: cover
 
 ### .fancy[Modulo Econometría]
 
-.large[Carlos Yanes | Departamento de Economía | 2024-07-30]
+.large[Carlos Yanes | Departamento de Economía | 2024-07-31]
 
 ---
 class: middle, inverse
@@ -183,17 +183,26 @@ D. `\(H_0:\)` Las variables no tienen efecto vs `\(H_1:\)` las variables tienen 
 
 --
 
-<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> Sea un proceso AR(1) de una serie de tiempo de cierta variable `\(Y_t=0.5Y_{t-1}+\epsilon_t\)`, donde `\(\epsilon_{t}\)` que es el residuo o error sigue un proceso ruido blanco `\(\epsilon_t \sim (0,\sigma^{2}_e)\)`. La varianza de la variable `\(Y_t\)` puede ser establecida como:
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> Contexto:
+Un/a economista está analizando los datos trimestrales del PIB de un país durante los últimos 5 años. Utiliza modelos de series de tiempo para identificar tendencias y patrones estacionales con el fin de hacer predicciones sobre el comportamiento futuro del PIB.
 
+Pregunta:
+Dado el siguiente gráfico de series de tiempo del PIB trimestral (en millones de dólares) durante los últimos 5 años, ¿cuál de las siguientes afirmaciones es correcta sobre la tendencia observada?
 --
 
-A. `\(2\sigma^2\)`
+&lt;img src="Class02_files/figure-html/unnamed-chunk-1-1.png" style="display: block; margin: auto;" /&gt;
 
-B. `\(\frac{4\sigma^2}{3}\)`
 
-C. `\(\frac{\sigma^4}{2}\)`
+---
+.fat[.fancy[Pregunta 2]]
 
-D. `\(\frac{0.25}{\sigma^2}\)`
+A. La serie de tiempo muestra una tendencia decreciente con patrones estacionales marcados.
+
+B. La serie de tiempo muestra una tendencia creciente con patrones estacionales marcados.
+
+C. La serie de tiempo no muestra una tendencia clara pero tiene patrones estacionales marcados.
+
+D. La serie de tiempo muestra una tendencia decreciente sin patrones estacionales.
 
 --
 
@@ -204,17 +213,21 @@ D. `\(\frac{0.25}{\sigma^2}\)`
 
 --
 
-<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> Sea un proceso AR(1) de una serie de tiempo de cierta variable `\(Y_t=2+0.3Y_{t-1}+\epsilon_t\)`, donde `\(\epsilon_{t}\)` que es el residuo o error sigue un proceso ruido blanco `\(\epsilon_t \sim (0,\sigma^{2}_e)\)`. La media `\(E(Y_t)\)` de la serie de tiempo puede ser establecida como:
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> Contexto:
+Un economista está analizando los datos de una serie de tiempo del precio de una acción a lo largo de los últimos 10 años. Está interesado en verificar las propiedades y supuestos comunes de las series de tiempo para modelar y hacer predicciones precisas.
+
+Pregunta:
+¿Cuál de las siguientes afirmaciones es correcta sobre las propiedades y supuestos de las series de tiempo en análisis económico?
 
 --
 
-A. `\(E(Y)=2\)`
+A. La estacionariedad implica que la media, la varianza y la covarianza de la serie de tiempo cambian con el tiempo.
 
-B. `\(E(Y)=\frac{1}{(1-\phi)}\)`
+B. La no correlación serial significa que los valores actuales de la serie de tiempo están influenciados por sus valores pasados.
 
-C. `\(E(Y)=\frac{4}{(1+\phi)}\)`
+C. La presencia de una raíz unitaria en una serie de tiempo indica que la serie es estacionaria.
 
-D. `\(E(Y)=\frac{2}{0.7}\)`
+D. La estacionariedad fuerte (estricta) implica que todas las propiedades estadísticas de la serie son invariantes en el tiempo.
 
 --
 
@@ -310,7 +323,7 @@ class: middle, inverse
 
 <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> La siguiente figura muestra la distribución del estimador `\(\beta_1\)`: A, B, C y D con media de 20.
 
-&lt;img src="Class02_files/figure-html/unnamed-chunk-1-1.svg" style="display: block; margin: auto;" /&gt;
+&lt;img src="Class02_files/figure-html/unnamed-chunk-2-1.svg" style="display: block; margin: auto;" /&gt;
 
 
 
@@ -343,7 +356,7 @@ D. Aunque no tiene mínima varianza el estimador `\(D\)` posee la característic
 
 <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg> Observe la siguiente distribución de los distintos errores/residuos de un conjunto de modelos que se han estimado.
 
-&lt;img src="Class02_files/figure-html/unnamed-chunk-2-1.svg" style="display: block; margin: auto;" /&gt;
+&lt;img src="Class02_files/figure-html/unnamed-chunk-3-1.svg" style="display: block; margin: auto;" /&gt;
 
 
 

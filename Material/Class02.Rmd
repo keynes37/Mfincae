@@ -248,17 +248,52 @@ D. $H_0:$ Las variables no tienen efecto vs $H_1:$ las variables tienen un efect
 
 --
 
-`r fa("laptop", fill="red")` Sea un proceso AR(1) de una serie de tiempo de cierta variable $Y_t=0.5Y_{t-1}+\epsilon_t$, donde $\epsilon_{t}$ que es el residuo o error sigue un proceso ruido blanco $\epsilon_t \sim (0,\sigma^{2}_e)$. La varianza de la variable $Y_t$ puede ser establecida como:
+`r fa("laptop", fill="red")` Contexto:
+Un/a economista está analizando los datos trimestrales del PIB de un país durante los últimos 5 años. Utiliza modelos de series de tiempo para identificar tendencias y patrones estacionales con el fin de hacer predicciones sobre el comportamiento futuro del PIB.
 
+Pregunta:
+Dado el siguiente gráfico de series de tiempo del PIB trimestral (en millones de dólares) durante los últimos 5 años, ¿cuál de las siguientes afirmaciones es correcta sobre la tendencia observada?
 --
 
-A. $2\sigma^2$
+```{r echo=FALSE, fig.height=4, fig.width=8}
+library(ggplot2)
+library(lubridate)
 
-B. $\frac{4\sigma^2}{3}$
+# Generar datos simulados para el PIB trimestral durante 5 años
+set.seed(123)  # Para reproducibilidad
+start_date <- ymd("2019-01-01")
+end_date <- ymd("2023-12-31")
+dates <- seq(start_date, end_date, by = "quarter")
+pib <- cumsum(rnorm(length(dates), mean = 50, sd = 10)) + 1000  # Datos simulados
 
-C. $\frac{\sigma^4}{2}$
+# Crear un dataframe con los datos
+data <- data.frame(
+  Fecha = dates,
+  PIB = pib
+)
 
-D. $\frac{0.25}{\sigma^2}$
+# Graficar la serie de tiempo con ggplot2
+ggplot(data, aes(x = Fecha, y = PIB)) +
+  geom_line(color = "blue", size = 1) +
+  geom_point(color = "red", size = 2) +
+  labs(title = "PIB Trimestral (en millones de dólares)",
+       x = "Fecha",
+       y = "PIB") +
+  theme_minimal()
+
+```
+
+
+---
+.fat[.fancy[Pregunta 2]]
+
+A. La serie de tiempo muestra una tendencia decreciente con patrones estacionales marcados.
+
+B. La serie de tiempo muestra una tendencia creciente con patrones estacionales marcados.
+
+C. La serie de tiempo no muestra una tendencia clara pero tiene patrones estacionales marcados.
+
+D. La serie de tiempo muestra una tendencia decreciente sin patrones estacionales.
 
 --
 
@@ -269,17 +304,21 @@ D. $\frac{0.25}{\sigma^2}$
 
 --
 
-`r fa("laptop", fill="red")` Sea un proceso AR(1) de una serie de tiempo de cierta variable $Y_t=2+0.3Y_{t-1}+\epsilon_t$, donde $\epsilon_{t}$ que es el residuo o error sigue un proceso ruido blanco $\epsilon_t \sim (0,\sigma^{2}_e)$. La media $E(Y_t)$ de la serie de tiempo puede ser establecida como:
+`r fa("laptop", fill="red")` Contexto:
+Un economista está analizando los datos de una serie de tiempo del precio de una acción a lo largo de los últimos 10 años. Está interesado en verificar las propiedades y supuestos comunes de las series de tiempo para modelar y hacer predicciones precisas.
+
+Pregunta:
+¿Cuál de las siguientes afirmaciones es correcta sobre las propiedades y supuestos de las series de tiempo en análisis económico?
 
 --
 
-A. $E(Y)=2$
+A. La estacionariedad implica que la media, la varianza y la covarianza de la serie de tiempo cambian con el tiempo.
 
-B. $E(Y)=\frac{1}{(1-\phi)}$
+B. La no correlación serial significa que los valores actuales de la serie de tiempo están influenciados por sus valores pasados.
 
-C. $E(Y)=\frac{4}{(1+\phi)}$
+C. La presencia de una raíz unitaria en una serie de tiempo indica que la serie es estacionaria.
 
-D. $E(Y)=\frac{2}{0.7}$
+D. La estacionariedad fuerte (estricta) implica que todas las propiedades estadísticas de la serie son invariantes en el tiempo.
 
 --
 
