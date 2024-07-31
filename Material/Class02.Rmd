@@ -241,7 +241,7 @@ D. $H_0:$ Las variables no tienen efecto vs $H_1:$ las variables tienen un efect
 
 --
 
-`r fa("check", fill="green")` CLAVE .fat[D]
+`r fa("check", fill="green")` CLAVE .fat[A]
 
 ---
 .fat[.fancy[Pregunta 2]]
@@ -535,7 +535,7 @@ D. Datos de corte repetido en distintos momentos del tiempo.
 
 `r fa("laptop", fill="red")` Tenemos un modelo que nos indica:
 
-$$ingreso_i= \beta_0+\beta_1educación+\beta_2habilidad+u_i$$
+$$Ingreso_i= \beta_0+\beta_1educación+\beta_2habilidad+u_i$$
 Pero no podemos observar la variable *habilidad* y en lugar de eso se estima un modelo como:
 $$ingreso_i= \beta_0+\beta_1educación+u_i$$
 Qué condiciones son requeridas para decir que tenemos un problema de sesgo por omisión de variables y por ende el resultado de la educación presente sesgos.
