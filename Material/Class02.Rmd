@@ -231,13 +231,13 @@ class: middle, inverse
 
 --
 
-A. $H_o:\beta_i\neq \beta_j\neq 0$
+A. $H_0:\beta_i= \beta_j= 0$ vs $H_1:\text{al menos un }\beta_i\neq 0$
 
-B. $H_o:\beta_i  > \beta_j>0$
+B. $H_0:\beta_i\neq \beta_j\neq 0$ vs $H_1:\beta_i=\beta_j= 0$
 
-C. $H_o:\beta_i  = \beta_j$
+C. $H_0:$ Modelo restringido es mejor vs $H_1:$ Modelo no restringido es mejor
 
-D. $H_o:\beta_i  = \beta_j=0$
+D. $H_0:$ Las variables no tienen efecto vs $H_1:$ las variables tienen un efecto positivo
 
 --
 
@@ -248,7 +248,7 @@ D. $H_o:\beta_i  = \beta_j=0$
 
 --
 
-`r fa("laptop", fill="red")` Sea un proceso AR(1) de una serie de tiempo de cierta variable $Y_t=0.5Y_{t-1}+\epsilon_t$, donde $\epsilon_{t-1}$ que es el residuo o error sigue un proceso ruido blanco $\epsilon_t \sim (0,\sigma^{2}_e)$. La varianza de la variable $Y_t$ puede ser establecida como:
+`r fa("laptop", fill="red")` Sea un proceso AR(1) de una serie de tiempo de cierta variable $Y_t=0.5Y_{t-1}+\epsilon_t$, donde $\epsilon_{t}$ que es el residuo o error sigue un proceso ruido blanco $\epsilon_t \sim (0,\sigma^{2}_e)$. La varianza de la variable $Y_t$ puede ser establecida como:
 
 --
 
@@ -269,7 +269,7 @@ D. $\frac{0.25}{\sigma^2}$
 
 --
 
-`r fa("laptop", fill="red")` Sea un proceso AR(1) de una serie de tiempo de cierta variable $Y_t=2+0.3Y_{t-1}+\epsilon_t$, donde $\epsilon_{t-1}$ que es el residuo o error sigue un proceso ruido blanco $\epsilon_t \sim (0,\sigma^{2}_e)$. La media $E(Y_t)$ de la serie de tiempo puede ser establecida como:
+`r fa("laptop", fill="red")` Sea un proceso AR(1) de una serie de tiempo de cierta variable $Y_t=2+0.3Y_{t-1}+\epsilon_t$, donde $\epsilon_{t}$ que es el residuo o error sigue un proceso ruido blanco $\epsilon_t \sim (0,\sigma^{2}_e)$. La media $E(Y_t)$ de la serie de tiempo puede ser establecida como:
 
 --
 
