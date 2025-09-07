@@ -1,0 +1,550 @@
+---
+title: "Saber Pro: Análisis Económico"
+subtitle: "Departamento de Economía"
+format:
+  ubd-revealjs:
+    # self-contained: false
+    # chalkboard: true
+    # toc: true
+    # toc-depth: 1
+    transition: fade
+    auto-stretch: false
+    width: 1250  # 1050
+    height: 760  # 700
+    self-contained: false
+    chalkboard: true
+    toc: false
+    toc-depth: 1
+    multiplex: false
+    code-block-height: 700px
+    # html-table-processing: none
+author:
+  - name: Carlos Andrés Yanes Guerra
+    orcid: 0000-0003-0683-3727
+    email: cayanes@uninorte.edu.co
+    affiliations: Universidad del Norte
+date: last-modified
+bibliography: refs.bib
+execute:
+  freeze: auto
+---
+
+## 🚀 {.center background-image="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWZlbDY1M2NoczRtdGk3ZXRoZm5iYng5Ymcwc3gxc2ZrcDRlenk3YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/BYLc3jKDFbsUnICse1/giphy.gif" background-size="cover"}
+
+<span style="color:white; font-size:2em;">
+**¡Bienvenido(a)s! ✨**
+</span>
+
+## Introducción
+
+### Referente a este módulo, yo considero que usted:
+
+::: incremental
+- {{< fa solid graduation-cap >}} Ya es un poco mas maduro(a)
+- {{< fa solid book >}} Le gustan los **retos**
+- {{< fa solid calculator >}} Recuerda algo de [**Econometría**]{.ubdblue}
+- {{< fa triangle-exclamation >}} El [**Saber Pro**]{.ubdred} es fundamental porque evalúa las **competencias** de los individuos. A través de las preguntas, los participantes deben demostrar su [capacidad para aplicar]{.bg style="--col: #F5C946"} conocimientos en diversas situaciones, comprendiendo conceptos económicos, utilizando herramientas cuantitativas para la solución de problemas y explicando fenómenos económicos a partir de teorías relevantes. Esto permite a los evaluados familiarizarse y conocer aún más la prueba.
+:::
+
+## El día de la prueba se organiza así:
+
+::: {.fade-in}
+![](Grafos/tabla1.png){width=95%}
+:::
+
+## Recomendaciones 
+
+::: {.fragment .fade-up}
+[**¡Siéntase seguro(a) de sí mismo(a)!**]{.ubdblue}
+:::
+
+::: {.fragment .fade-up}
+[**No estudie un día antes ni la semana antes 😇**]{.ubdteal}
+:::
+
+::: {.fragment .fade-up}
+[**Lea dos veces sin estar pendiente del tiempo, focalice su objetivo -> 💯**]{.ubdblue}
+:::
+
+::: {.fragment .fade-up}
+[**Usted es más que una prueba. Usted ya es todo(a) un(a) profesional!!🔝**]{.ubdred}
+:::
+
+# Competencias ♣️ {.transition-slide-ubdyellow}
+
+## Competencias evaluadas
+
+::: {.fragment .fade-up}
+### Competencias génericas
+Este módulo mide habilidades transversales esenciales para el **desempeño profesional** y ciudadano, independientemente del *programa académico*.
+:::
+
+::: {.fragment .callout-warning}
+## Comunicación Escrita
+Este módulo evalúa la competencia para *comunicar ideas por escrito* referidas a un tema dado. Específicamente, el estudiante debe **producir** un `texto argumentativo` en el que justifique su respuesta al problema planteado en el enunciado de la pregunta.
+:::
+
+::: {.fragment .callout-tip}
+## Lectura crítica
+Este módulo evalúa tres competencias. Las dos primeras se refieren a la **comprensión del contenido de un texto**, ya sea a nivel `local` o global, y la tercera, a la aproximación propiamente **crítica** frente al texto.
+:::
+
+## Otro poco mas de esto
+
+::: {.fragment .callout-tip}
+## Razonamiento cuantitativo
+Este módulo evalúa el conjunto de **elementos de las matemáticas** (sean estos conocimientos o competencias) que permiten a un ciudadano tomar parte activa e informada en el contexto social, cultural, político, administrativo, económico, educativo y laboral.
+:::
+
+::: {.fragment .callout-warning}
+## Competencias ciudadanas
+En este módulo se evalúan aquellas **habilidades cognitivas, emocionales y comunicativas** que, integradas entre sí y relacionadas con conocimientos y actitudes, hacen posible que el ciudadano actúe de manera *constructiva* en la sociedad.
+:::
+
+::: {.fragment .callout-caution}
+## Inglés
+Este módulo evalúa la competencia para **comunicarse efectivamente** en inglés en un nivel básico.
+:::
+
+## Detalles
+
+::: {.fragment .callout-tip collapse="true"}
+## Detalles generales
+Cada módulo contiene alrededor de **35 preguntas** por componente, siendo el de **Inglés** el que más tiene (≈55). También hay preguntas generales para conocer de usted mismo/a. Los verbos más importantes son **identifica** y **comprende**.
+:::
+
+::: {.fragment .fade-up}
+### Competencias específicas
+Comprende las diferentes herramientas cuantitativas que permiten el planteamiento de un problema económico y su solución.
+:::
+
+::: {.fragment .callout-warning}
+## Economía
+Un módulo específico que contiene preguntas de *Macroeconomía*, *Microeconomía*, *Econometría*, *Estadística* e incluso *Pensamiento e historia económica*.  
+Son aproximadamente 50 preguntas de `opción múltiple` con `única` respuesta.
+:::
+
+# Reglas de este simulacro 🎲 {.transition-slide-ubdred}
+
+## Reglas
+
+### 📌 1. Reglas para la sesión en Teams con polls
+
+- Todos los estudiantes deben [responder]{.alert}!!
+- Se dará una tolerancia máxima de 5 minutos por respuesta.
+- Mantengase identificado(a) todo el tiempo.
+- Micrófonos apagados en el momento de la pregunta.
+- Activar micrófono solo cuando se les dé la palabra.
+- Cada [**estudiante**]{.ubdblue} debe responder en el poll en el tiempo asignado (no se permiten respuestas múltiples o fuera de tiempo).
+- [Los resultados]{.ubdred} serán usados como insumo de **retroalimentación**, no para calificación.
+- Prohibido compartir pantallas o distraer al grupo sin autorización.
+- Se espera actitud de simulacro serio, como en la prueba Saber PRO.
+
+## ➕  {.center background-image="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDg1dGpmbTN0OGUwODd4N2Y2cDV0bW52eGNsZDBhcTc4azB2cXAwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fxBaFXmFMbi6ft0WAk/giphy.gif" background-size="cover" style="color:white;"}
+
+## Pregunta 1 {#sec1 .scrollable}
+
+**Contexto**: Un econometrista está construyendo un modelo de regresión lineal múltiple para analizar los factores que influyen en el consumo de un hogar. Ha incluido variables como el ingreso del hogar, el tamaño del hogar y el número de adultos empleados. Durante el análisis, el investigador detecta una alta correlación entre el ingreso del hogar y el número de adultos empleados.
+
+**Pregunta**: De acuerdo con el Modelo de Regresión Lineal (MRL) y el supuesto de no multicolinealidad, ¿cuál de las siguientes afirmaciones describe una consecuencia teórica de la alta correlación entre las variables explicativas mencionadas?
+
+[**Opciones de Respuestas**]{.bg style="--col: #58DDB3"}
+
+A. Los estimadores de Mínimos Cuadrados Ordinarios (MCO) de los coeficientes serán sesgados e inconsistentes.
+
+B. El coeficiente de determinación (R-cuadrado) del modelo será significativamente bajo.
+
+C. La matriz de diseño del modelo generará un rango incompleto, dificultando la estimación precisa de los efectos individuales de las variables. 
+
+D. Los errores del modelo exhibirán autocorrelación, afectando la eficiencia de los estimadores.
+
+[[Respuesta]{.button}](#respuesta1)
+
+## Pregunta 2 {#sec2 .scrollable}
+
+**Contexto**: Un investigador estima un modelo de regresión lineal para explicar el gasto anual de los hogares en bienes duraderos (como electrodomésticos) en función del ingreso anual del hogar y el tamaño del hogar. Después de estimar el modelo utilizando Mínimos Cuadrados Ordinarios (MCO), el investigador realiza un análisis de los residuos. Al graficar los residuos frente a los valores predichos del gasto, el investigador observa que la variabilidad de los residuos aumenta sistemáticamente a medida que aumenta el gasto predicho.
+
+**Pregunta**: A partir de esta observación, ¿qué supuesto del Modelo de Regresión Lineal (MRL) se está violando y cuál es la principal implicación de esta violación para la inferencia estadística del modelo?
+
+[**Opciones de Respuestas**]{.bg style="--col: #58DDB3"}
+
+A. Se viola el supuesto de heteroscedasticidad. Como resultado, los estimadores MCO son sesgados, pero sus varianzas son correctas, lo que invalida las pruebas de hipótesis. 
+
+B. Se viola el supuesto de homoscedasticidad. Como resultado, los estimadores MCO siguen siendo insesgados y consistentes, pero sus errores estándar son incorrectos, lo que lleva a que las pruebas de significancia y los intervalos de confianza sean inválidos. 
+
+C. Se viola el supuesto de no autocorrelación. Como resultado, los estimadores MCO son insesgados y eficientes, pero la predicción del modelo no es óptima. 
+
+D. Se viola el supuesto de no multicolinealidad. Como resultado, los estimadores MCO son inconsistentes, y los errores estándar de los coeficientes son erróneamente pequeños.
+
+[[Respuesta]{.button}](#respuesta2)
+
+## Pregunta 3 {#sec3 .scrollable}
+
+**Enunciado**: Un equipo de analistas de mercado está investigando los factores que influyen en las ventas diarias de un producto específico. Para ello, han propuesto el siguiente modelo de regresión lineal:
+$$
+Ventas_t = \beta_0 + \beta_1*\text{Precio Producto}_t + \beta_2*\text{Publicidad}_t + \beta_3*\text{Precio Competencia}_t + \beta_4*\text{Ingreso Hogares}_t + ε_t
+$$
+Donde: $Ventas_t$: ventas diarias del producto en el período t. $\text{Precio Producto}_t$: precio del propio producto en el período t. $\text{Publicidad}_t$: inversión en publicidad en el período t. $\text{Precio Competencia}_t$: precio del producto de la competencia en el período t. $\text{Ingreso Hogares}_t$: ingreso promedio de los hogares de la región en el período t. $ε_t$: término de error.
+
+Los analistas sospechan que las variables Precio Competencia y Ingreso Hogares no tienen un efecto significativo conjunto sobre las ventas. Para probar esta hipótesis, deciden utilizar una prueba F, comparando un modelo restringido con uno no restringido.
+
+¿Cuál de las siguientes formulaciones de hipótesis es la más adecuada para evaluar si Precio Competencia y Ingreso Hogares tienen un efecto significativo conjunto sobre las ventas?
+
+[**Opciones de Respuestas**]{.bg style="--col: #58DDB3"}
+
+A. H0: β3 = 0, H1: β3 ≠ 0 
+
+B. H0: β4 = 0, H1: β4 ≠ 0 
+
+C. H0: β3 = 0 y β4 = 0, H1: al menos uno de β3 o β4 es diferente de cero. 
+
+D. H0: β3 ≠ 0 y β4 ≠ 0, H1: β3 = 0 y β4 = 0
+
+[[Respuesta]{.button}](#respuesta3)
+
+## Pregunta 4 {#sec4 .scrollable}
+
+**Enunciado**: Un econometrista ha estimado un modelo de regresión lineal y, como parte del diagnóstico, ha generado el siguiente gráfico de los residuos (û) frente a los valores predichos (Ŷ) del modelo:
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(tidyverse)
+
+theme_axes_y <- theme_void() + theme(
+  text = element_text(family = "sans"),
+  axis.title = element_text(size = 11),
+  plot.title = element_text(size = 11, hjust = 0.5),
+  axis.title.x = element_text(hjust = .95, margin = margin(0.15, 0, 0, 0, unit = "lines")),
+  axis.title.y = element_text(vjust = .95, margin = margin(0, -0.2, 0, 0, unit = "lines")),
+  axis.text.y = element_text(
+    size = 10, angle = 0, hjust = 0.9, vjust = 0.5,
+    margin = margin(0, 0.4, 0, 0, unit = "lines")
+  ),
+  axis.line = element_line(
+    color = "#D3D3D3",
+    size = 0.25,
+    arrow = arrow(angle = 30, length = unit(0.07, "inches")
+  )),
+  plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
+  legend.position = "none"
+)
+
+set.seed(123456)
+n <- 115
+
+p3 <- ggplot(data = tibble(x = 1:n, u = runif(n, min = -250, max = (x-50.5)^2)), aes(x = x, y = u)) +
+labs(
+    x = "Valores Predichos (Ŷ)",
+    y = "Residuos (û)") +
+geom_hline(yintercept = 0) +
+scale_y_continuous(breaks = 0) +
+geom_point() +
+ggtitle("Modelo de consumo") +
+theme_axes_y
+
+p3
+```
+
+De acuerdo con la gráfica, ¿qué supuesto del Modelo de Regresión Lineal Clásico (MRLC) se está incumpliendo?
+
+[**Opciones de Respuestas**]{.bg style="--col: #58DDB3"}
+
+A. Homoscedasticidad. 
+
+B. Normalidad de los errores. 
+
+C. No autocorrelación de los errores. 
+
+D. Ausencia de multicolinealidad.
+
+[[Respuesta]{.button}](#respuesta4)
+
+## Pregunta 5 {#sec5 .scrollable}
+
+**Enunciado**: Un econometrista está analizando la serie temporal mensual del índice de precios al consumidor (IPC) de un país y observa que, a lo largo de décadas, la serie muestra una tendencia creciente y que las perturbaciones no parecen desvanecerse rápidamente, sino que persisten en el tiempo. Esta observación le sugiere que el IPC podría no ser estacionario y que un shock en un momento dado podría tener efectos permanentes.
+
+¿Qué tipo de prueba estadística es la más adecuada para determinar si la serie del IPC tiene una raíz unitaria y, por lo tanto, no es estacionaria en media?
+
+[**Opciones de Respuestas**]{.bg style="--col: #58DDB3"}
+
+A. Prueba de Durbin-Watson para autocorrelación. 
+
+B. Prueba de White para heteroscedasticidad.
+
+C. Prueba de Dickey-Fuller Aumentada (ADF). 
+
+D. Prueba de Breusch-Pagan para heteroscedasticidad.
+
+[[Respuesta]{.button}](#respuesta5)
+
+
+## Pregunta 6 {#sec6 .scrollable}
+
+**Enunciado**: Un econometrista ha estimado un modelo de regresión de series de tiempo y, como parte fundamental del diagnóstico del modelo, está verificando las propiedades de los residuos ($\hat{u}_t$). Para que el modelo sea considerado bien especificado y los estimadores de Mínimos Cuadrados Ordinarios (MCO) sean eficientes y permitan una inferencia válida, los residuos deben comportarse idealmente como un proceso de ruido blanco.
+
+¿Cuál de las siguientes es una característica fundamental que deben cumplir los errores de un proceso de ruido blanco?
+
+[**Opciones de Respuestas**]{.bg style="--col: #58DDB3"}
+
+A. La varianza de los errores ($\hat{u}_t$) es creciente en el tiempo (heteroscedasticidad). 
+
+B. La media de los errores ($\hat{u}_t$) es una función lineal de las variables explicativas.
+
+C. La distribución de los errores ($\hat{u}_t$) debe ser necesariamente normal.
+
+D. Los errores ($\hat{u}_t$) no presentan autocorrelación serial. 
+
+[[Respuesta]{.button}](#respuesta6)
+
+## Pregunta 7 {#sec7 .scrollable}
+
+**Enunciado**: Un equipo de investigadores desea analizar el impacto de ciertas políticas de incentivos fiscales en la inversión empresarial. Para ello, recopilan datos anuales durante 10 años sobre la inversión, los beneficios, el tamaño y si la empresa recibió o no incentivos fiscales, para una muestra de 500 empresas manufactureras en un país. Los investigadores están preocupados por la existencia de características no observadas y persistentes a nivel de cada empresa (como la calidad de la gerencia o la cultura organizacional) que podrían estar correlacionadas con las variables explicativas y la inversión, sesgando los resultados de un análisis de corte transversal o de series de tiempo puras.
+
+¿Qué ventaja principal ofrece el uso de un modelo con datos de panel longitudinal (como el de efectos fijos) para abordar esta preocupación?
+
+[**Opciones de Respuestas**]{.bg style="--col: #58DDB3"}
+
+A. Controla por características no observadas, específicas de cada entidad, que son constantes en el tiempo y que podrían sesgar las estimaciones. 
+
+B. Facilita la identificación de la heteroscedasticidad, pero no resuelve el problema de las características no observadas. 
+
+C. Permite la estimación de la causalidad entre variables con una única observación por entidad.  
+
+D. Simplifica el análisis al reducir el número de observaciones, lo que mejora la eficiencia de los estimadores MCO.
+
+[[Respuesta]{.button}](#respuesta7)
+
+## Pregunta 8 {#sec8 .scrollable}
+
+**Enunciado**: Un economista está analizando los datos trimestrales del Producto Interno Bruto (PIB) de un país durante los últimos 5 años (2020-2024). Su objetivo es identificar tendencias y patrones estacionales para realizar predicciones sobre el comportamiento futuro del PIB.
+
+Supongamos que el análisis inicial del economista revela un gráfico de series de tiempo del PIB trimestral (en millones de dólares) con las siguientes características:
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(lubridate)
+
+# Generar datos simulados para el PIB trimestral durante 5 años
+set.seed(123)  # Para reproducibilidad
+start_date <- ymd("2019-01-01")
+end_date <- ymd("2024-12-31")
+dates <- seq(start_date, end_date, by = "quarter")
+pib <- cumsum(rnorm(length(dates), mean = 50, sd = 10)) + 1000  # Datos simulados
+
+# Crear un dataframe con los datos
+data <- data.frame(
+  Fecha = dates,
+  PIB = pib
+)
+
+# Graficar la serie de tiempo con ggplot2
+ggplot(data, aes(x = Fecha, y = PIB)) +
+  geom_line(color = "blue", size = 1) +
+  geom_point(color = "red", size = 2) +
+  labs(title = "PIB Trimestral (en millones de dólares)",
+       x = "Fecha",
+       y = "PIB") +
+  theme_minimal()
+```
+
+**Pregunta**: Considerando la descripción del gráfico del PIB trimestral para el período 2020-2024, ¿cuál de las siguientes afirmaciones es correcta sobre la tendencia general observada?
+
+[**Opciones de Respuestas**]{.bg style="--col: #58DDB3"}
+
+A. El PIB muestra una tendencia decreciente, ya que las fluctuaciones trimestrales son muy marcadas. 
+
+B. El PIB presenta una tendencia constante, dado que sus valores oscilan de forma predecible alrededor de un promedio fijo.
+
+C. La pronunciada estacionalidad impide identificar con claridad cualquier tendencia a largo plazo en el PIB.
+
+D. El PIB evidencia una tendencia creciente a lo largo del período, la cual se superpone a patrones de estacionalidad anual.
+
+[[Respuesta]{.button}](#respuesta8)
+
+## Pregunta 9 {#sec9 .scrollable}
+
+**Enunciado**: Un equipo de investigación de una universidad está realizando un estudio sobre los determinantes de la tasa de criminalidad en las principales ciudades de un país. Para ello, recopilaron datos de corte transversal para 60 ciudades en el año 2023. La variable dependiente es la Tasa de Criminalidad (medida como el número de delitos por cada 100.000 habitantes). Las variables explicativas incluyen:
+
+- Tasa de Pobreza (en porcentaje): Proporción de la población de la ciudad que vive bajo la línea de pobreza.
+- Nivel de Educación (años promedio de escolaridad): Años promedio de escolaridad de los adultos en la ciudad.
+- Gasto en Seguridad per cápita (en miles de pesos): Inversión municipal en seguridad por habitante.
+
+El equipo estimó el siguiente modelo de regresión lineal múltiple por Mínimos Cuadrados Ordinarios (MCO), obteniendo los resultados que se presentan a continuación:
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(tibble)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+# Datos
+tabla <- tribble(
+  ~`Variable Independiente`,         ~`Coeficiente Estimado`, ~`Error Estándar`, ~`Valor p`,
+  "(Intercepto)",                    85.30,                   12.50,             0.001,
+  "Tasa de Pobreza",                  2.15,                    0.58,             0.003,
+  "Nivel de Educación",              -3.20,                    0.85,             0.001,
+  "Gasto en Seguridad per cápita",   -0.75,                    0.60,             0.215
+)
+
+# Tabla bonita
+tabla %>%
+  kable(format = "html", digits = 3, align = "lccc",
+        caption = "Resultados de la regresión") %>%
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+**Pregunta**: Basándose en los resultados del modelo de regresión lineal presentado, ¿cuál de las siguientes afirmaciones es la interpretación más adecuada y estadísticamente correcta del coeficiente de la variable "Tasa de Pobreza"?
+
+[**Opciones de Respuestas**]{.bg style="--col: #58DDB3"}
+
+A. Por cada aumento de un punto porcentual en la Tasa de Pobreza, la Tasa de Criminalidad disminuye en 2.15 delitos por cada 100.000 habitantes, manteniendo las demás variables constantes. 
+
+B. Un aumento de un punto porcentual en la Tasa de Pobreza se asocia con un incremento de 2.15 delitos por cada 100.000 habitantes en la Tasa de Criminalidad, manteniendo constantes el Nivel de Educación y el Gasto en Seguridad per cápita, y este efecto es estadísticamente significativo. 
+
+C. La Tasa de Pobreza no tiene un efecto estadísticamente significativo sobre la Tasa de Criminalidad, porque su coeficiente es menor que el del Nivel de Educación. 
+
+D. La Tasa de Pobreza es una variable endógena y, por lo tanto, su coeficiente no puede ser interpretado en este modelo de corte transversal.
+
+[[Respuesta]{.button}](#respuesta9)
+
+## Pregunta 10 {#sec10 .scrollable}
+
+**Enunciado**: Un país exportador de materias primas se encontraba en una situación de equilibrio externo hasta hace cinco años. A partir de ese momento, una devaluación real de su tasa de cambio mejoró considerablemente su balanza en cuenta corriente. Un analista económico ha concluido que la razón por la cual esta devaluación hizo superavitaria la cuenta corriente radica en que la cantidad demandada de exportaciones y de importaciones ha sido suficientemente sensible a la variación en la tasa de cambio real.
+
+**Pregunta**: Según lo anterior, ¿cuál de los siguientes modelos económicos es el más útil para entender el desequilibrio externo de este país y la efectividad de la devaluación real?
+
+[**Opciones de Respuestas**]{.bg style="--col: #58DDB3"}
+
+A. El modelo clásico del comercio internacional.
+
+B. El modelo keynesiano de determinación del ingreso.
+
+C. El modelo de elasticidades de Marshall-Lerner.
+
+D. El modelo de switching de la balanza de pagos.
+
+[[Respuesta]{.button}](#respuesta9)
+
+# Respuestas a las preguntas 🎲 {.transition-slide-ubdblue}
+
+## Respuesta 1 {#respuesta1 revisibility="uncounted"}
+
+::: {.callout-warning}
+## Respuesta: 
+-> ✅ **C❗️**
+
+La **multicolinealidad** severa implica que las columnas de la matriz de variables explicativas están linealmente relacionadas, lo que puede llevar a una matriz de rango incompleto o casi incompleto, haciendo difícil o imposible invertir la matriz $(X'X)$ y, por lo tanto, estimar los coeficientes individuales de manera precisa. Esto resulta en errores estándar muy grandes para los coeficientes, lo que a su vez amplía los intervalos de confianza.
+:::
+
+[Return](#sec1)
+
+## Respuesta 2 {#respuesta2 revisibility="uncounted"}
+
+::: {.callout-warning}
+## Respuesta: 
+-> ✅ **B❗️** 
+
+Los estimadores de **Mínimos Cuadrados Ordinarios (MCO)** siguen siendo insesgados y consistentes incluso en presencia de heteroscedasticidad. Esto significa que, en promedio, los estimadores de MCO aún dan el valor verdadero del parámetro si la muestra es grande.
+
+- Sin embargo, los estimadores MCO dejan de ser eficientes (ya no son los Mejores Estimadores Lineales Insesgados, MELI).
+- Lo más crítico para la inferencia es que los errores estándar calculados por MCO son incorrectos. 
+:::
+
+[Return](#sec2)
+
+
+## Respuesta 3 {#respuesta3 revisibility="uncounted"}
+
+::: {.callout-warning}
+## Respuesta: 
+-> ✅ **C❗️** 
+
+Es la correcta porque formula la [hipótesis nula]{.bg style="--col: #F5C946"} como β3 = 0 y β4 = 0, indicando que ambas variables **no** tienen efecto sobre las ventas, y la hipótesis alternativa como al menos uno de β3 o β4 es diferente de cero, lo que significa que [al menos una]{.bg style="--col: #FFC0CB"} de las variables del grupo sí tiene un efecto significativo. Esta es la formulación estándar para una prueba **F** de significancia conjunta.
+:::
+
+[Return](#sec3)
+
+## Respuesta 4 {#respuesta4 revisibility="uncounted"}
+
+::: {.callout-warning}
+## Respuesta: 
+-> ✅ **A❗️** 
+
+La gráfica muestra que la **variabilidad** (dispersión) de los residuos disminuye al principio sistemáticamente a medida que aumentan los valores predichos del modelo (observa la forma de "abanico" o embudo que se abre). Este patrón visual es una señal clara de que la varianza de los errores [no es constante]{.bg style="--col: #F5C946"} para todas las observaciones.
+:::
+
+[Return](#sec4)
+
+## Respuesta 5 {#respuesta5 revisibility="uncounted"}
+
+::: {.callout-warning}
+## Respuesta: 
+-> ✅ **C❗️** 
+
+Esta es la respuesta correcta. La prueba de [Dickey-Fuller Aumentada (ADF)]{.bg style="--col: #FFC0CB"} es una de las pruebas más utilizadas en econometría de series de tiempo para evaluar la hipótesis nula de que una serie temporal tiene una raíz unitaria (es decir, no es estacionaria) frente a la hipótesis alternativa de que es estacionaria. Es fundamental para determinar si es necesario diferenciar la serie antes de modelarla.
+:::
+
+[Return](#sec5)
+
+## Respuesta 6 {#respuesta6 revisibility="uncounted"}
+
+::: {.callout-warning}
+## Respuesta: 
+-> ✅ **D❗️** 
+
+Los errores ($\hat{u}_t$) no presentan autocorrelación serial: Esta es la respuesta correcta. Una característica fundamental y definitoria de un **proceso de ruido blanco** es que sus valores no están correlacionados entre sí a lo largo del tiempo. Esto se conoce como la ausencia de autocorrelación. La presencia de autocorrelación en los residuos indica que el modelo no ha capturado completamente la dinámica temporal de la variable dependiente y puede llevar a estimadores de MCO ineficientes y errores estándar incorrectos
+:::
+
+[Return](#sec6)
+
+## Respuesta 7 {#respuesta7 revisibility="uncounted"}
+
+::: {.callout-warning}
+## Respuesta: 
+-> ✅ **A❗️** 
+
+Los modelos de panel de efectos fijos, al introducir una **variable dicótoma** (o una media por grupo) para cada entidad, logran eliminar el efecto de cualquier característica no observada a nivel de la entidad que sea constante en el tiempo y que pueda estar correlacionada con las variables explicativas. Esto reduce el sesgo por variables omitidas y permite obtener estimaciones más consistentes del efecto de las variables de interés.
+:::
+
+[Return](#sec7)
+
+## Respuesta 8 {#respuesta8 revisibility="uncounted"}
+
+::: {.callout-warning}
+## Respuesta: 
+-> ✅ **D❗️** 
+
+Lo que constituye que es la respuesta por el efecto de tener una tendencia creciente. Al mismo tiempo, se mencionan dentro de cada año el asunto de los trimestrs, lo cual corresponde a la estacionalidad. Esta opción demuestra una comprensión adecuada de cómo coexisten y se identifican estos dos componentes en una serie de tiempo.
+:::
+
+[Return](#sec8)
+
+## Respuesta 9 {#respuesta9 revisibility="uncounted"}
+
+::: {.callout-warning}
+## Respuesta: 
+-> ✅ **B❗️** 
+
+Un aumento de un [punto porcentual]{.bg style="--col: #F5C946"} en la Tasa de Pobreza se asocia con un incremento de 2.15 delitos por cada 100.000 habitantes en la Tasa de Criminalidad, manteniendo constantes el Nivel de Educación y el Gasto en Seguridad per cápita, y este efecto es estadísticamente significativo: Esta es la respuesta correcta.
+
+- El coeficiente 2.15 indica que por cada punto porcentual de aumento en la Tasa de Pobreza, la Tasa de Criminalidad aumenta en 2.15 unidades (delitos por 100.000 habitantes).
+
+- La frase "manteniendo constantes las demás variables" (o ceteris paribus) es crucial para la interpretación de coeficientes en regresión múltiple.
+:::
+
+[Return](#sec9)
+
+## Respuesta 10 {#respuesta9 revisibility="uncounted"}
+
+::: {.callout-warning}
+## Respuesta: 
+-> ✅ **C❗️** 
+
+El enfoque de **elasticidades** se inspira directamente en la condición de Marshall-Lerner. Esta condición establece que, partiendo de una situación de balanza equilibrada, una depreciación real de la moneda de un país mejora su balanza por cuenta corriente solo si los volúmenes de exportaciones e importaciones son lo suficientemente elásticos respecto al tipo de cambio real. Es decir, si las exportaciones [reaccionan significativamente]{.bg style="--col: #F5C946"}) aumentando, y las importaciones disminuyen de forma notoria, lo cual mejora la cuenta corriente. La clave del enunciado reside en la mención de la "suficiente sensibilidad" de las demandas.
+:::
+
+[Return](#sec10)
+
+
+
+## ➕  {.center background-image="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmgxeXE0dmFxNWpnbmY3czRsdDg1bnF4d2tzMmV3aTU0NGtscXNjayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l1IY3GUrvH9MYRLTq/giphy.gif" background-size="cover" style="color:white;"}
