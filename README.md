@@ -8,6 +8,6 @@ Parte de [Econometría I y II](https://raw.githack.com/keynes37/Mfincae/main/Mat
 OCSA 3/11/2026
 [https://keynes37.github.io/Mfincae/ocsa_semeco_mejorada.html](https://keynes37.github.io/Mfincae/ocsa_semeco_mejorada.html)
 
-
+vamos a [Link Press](https://raw.githack.com/keynes37/Mfincae/main/ocsa_semeco_mejorada.html)
 
 
