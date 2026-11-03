@@ -5,5 +5,9 @@ Presentación [Microeconomía](https://raw.githack.com/keynes37/Mfincae/main/Mat
 
 Parte de [Econometría I y II](https://raw.githack.com/keynes37/Mfincae/main/Material/Class02.html)
 
+OCSA 3/11/2026
+[Presentacion en sala](https://keynes37.github.io/Mfincae/ocsa_semeco_mejorada.html)
+
+
 
 
